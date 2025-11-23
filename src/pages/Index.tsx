@@ -66,11 +66,6 @@ const Index = () => {
       title: 'Спасибо за внимание!',
       subtitle: 'Зенитные фонари — решение для современных зданий',
       conclusion: 'Зенитные фонари представляют собой высокоэффективное решение для естественного освещения и вентиляции промышленных и коммерческих объектов. Инвестиции в качественные системы зенитного освещения окупаются за счет существенной экономии электроэнергии, улучшения условий труда и повышения стоимости объекта недвижимости.',
-      contacts: [
-        { label: 'Email', value: 'info@example.com', icon: 'Mail' },
-        { label: 'Телефон', value: '+7 (495) 123-45-67', icon: 'Phone' },
-        { label: 'Сайт', value: 'www.example.com', icon: 'Globe' }
-      ],
       image: 'https://cdn.poehali.dev/projects/0f5a4d98-2d8e-44c0-9e49-6306aebc0cde/files/441e061b-065d-417b-a8d9-a5e937549e9d.jpg',
       type: 'ending'
     }
@@ -157,22 +152,10 @@ const Index = () => {
                   )}
 
                   {slide.type === 'ending' && (
-                    <div className="space-y-6">
-                      <p className="text-base text-slate-600 leading-relaxed font-['Open_Sans']">
+                    <div className="flex items-center justify-center h-full">
+                      <p className="text-lg text-slate-600 leading-relaxed font-['Open_Sans'] text-center">
                         {slide.conclusion}
                       </p>
-                      <div className="mt-8 space-y-4 pt-6 border-t border-slate-200">
-                        <h3 className="font-bold text-slate-800 mb-4 font-['Montserrat']">Контакты:</h3>
-                        {slide.contacts?.map((contact, idx) => (
-                          <div key={idx} className="flex items-center gap-3">
-                            <Icon name={contact.icon as any} className="text-sky-500 flex-shrink-0" size={20} />
-                            <div>
-                              <span className="text-sm text-slate-500 font-['Open_Sans']">{contact.label}: </span>
-                              <span className="text-slate-700 font-medium font-['Open_Sans']">{contact.value}</span>
-                            </div>
-                          </div>
-                        ))}
-                      </div>
                     </div>
                   )}
                 </div>
