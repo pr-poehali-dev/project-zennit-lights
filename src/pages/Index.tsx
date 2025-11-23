@@ -35,6 +35,7 @@ const Index = () => {
         { icon: 'Wind', text: 'Естественная вентиляция помещений через открывающиеся секции', color: 'text-sky-500' },
         { icon: 'TrendingUp', text: 'Повышение производительности труда благодаря комфортному освещению', color: 'text-blue-500' }
       ],
+      image: 'https://cdn.poehali.dev/projects/0f5a4d98-2d8e-44c0-9e49-6306aebc0cde/files/441e061b-065d-417b-a8d9-a5e937549e9d.jpg',
       type: 'benefits'
     },
     {
